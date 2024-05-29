@@ -1,0 +1,34 @@
+.search-container{
+    background-color: #cd939d;
+}
+
+.logo{
+    width: 15%;
+}
+
+.btn-search{
+    color: black;
+    background-color: white;
+    border: none;
+}
+
+.btn-access{
+    border: none;
+    color: black;
+}
+
+.btn-access:hover{
+    background-color: rgb(126, 73, 73);
+}
+
+.card-categories-menu{
+    border: 1px solid #bea5a9;
+}
+
+.btn-ver-mas{
+    border-radius:0%;
+}
+
+.btn-ver-mas:hover{
+    background-color: #bea5a9;
+}
