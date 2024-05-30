@@ -1,7 +1,7 @@
 // import './styleCategory.css'
-import { CategoryCard } from './CategoryCard'
-import { fetchData } from './fetchData'
-import { fetchDataPaginated } from './fetchDataPaginated'
+import { CategoryCard } from '../CategoryCardComponent/CategoryCard'
+import { fetchData } from '../FetchDataActions/fetchData'
+import { fetchDataPaginated } from '../FetchDataActions/fetchDataPaginated'
 import { Suspense, useState } from 'react';
 const TAKECATEGORIES = 6;
 var SKIPCATEGORIES = 0;
