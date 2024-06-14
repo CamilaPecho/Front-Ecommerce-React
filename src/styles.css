@@ -1,3 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .search-container{
     background-color: #cd939d;
 }
@@ -23,6 +29,11 @@
 
 .card-categories-menu{
     border: 1px solid #bea5a9;
+}
+
+.content-page{
+    margin: auto;
+    max-width: 80%;
 }
 
 .btn-ver-mas{

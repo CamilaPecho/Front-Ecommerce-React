@@ -1,27 +1,31 @@
 
-import React, { startTransition } from 'react';
+import React from 'react';
+import './styleCategory.css'
+
+const urlImageLocation = 'https://localhost:7036/images/';
 
 export class CategoryCard extends React.Component {
   
-  handleClick = () => {
-    const { category, history } = this.props;
-    startTransition(() => {
-      history.push(`/products?filter=${category.id}`);
-    });
-  }
-
   render() {
     const { category } = this.props; 
 
     return (
       <div 
-        className="col-md-3 card p-3 m-3 category-info" 
-        style={{ border: `1px solid ${category.color}` }}
-        onClick={this.handleClick}
+        className="col-md-3 card p-2 m-3 category-info" 
+        style={{ border: `1px solid ${category.color}`,
+                  backgroundImage: `url(${urlImageLocation+category.image+'.jpg'})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  height: '250px',
+                  display: 'flex',
+                  justifyContent: 'flex-end',
+                }}
         role="button"
       >
-        <h2>{category.name}</h2>  
-        <p>{category.description}</p>  
+        <div className='info-category p-2'>
+          <h2 className='font-weight-bold'>{category.name}</h2>  
+          <p>{category.description}</p>  
+        </div>
        
       </div>
     );
