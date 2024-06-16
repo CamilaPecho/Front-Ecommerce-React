@@ -8,7 +8,7 @@ export const App = () => {
     <div className="content-page">
       <CategoryCardList/>
       <SectionProductList order={"createdDate"} title={"Articulos nuevos"}/>
-      <SectionProductList order={"amount"} title={"Articulos mas visitados"}/>
+      <SectionProductList order={"amount"} title={"Articulos destacados"}/>
     </div>
   )
 }
